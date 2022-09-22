@@ -30,7 +30,6 @@ a {
 	-moz-transition:all 0.5s;
 	-o-transition:all 0.5s;
 	transition:all 0.5s;
-	border-bottom: 1px dashed;
 	outline:none!important;
 }
 a:hover,a:focus,a:active {
@@ -46,7 +45,7 @@ p {
 }
 h2 {
 	font-size:15px;
-	color:#353535!important;
+	color:#353535;
 	text-transform:uppercase;
 	font-weight:bold;
 }
@@ -103,6 +102,8 @@ html,button,input,select,textarea {
 body {
 	margin:0;
 	font-family: 'Open Sans',sans-serif;
+	background: url(../img/header-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 /* ==========================================================================Links========================================================================== */
 a:focus {
@@ -117,8 +118,9 @@ h1 {
 	font-size:1.7em;
 	margin:0.67em 0;
 	padding-top: 0.67em;
-	color:#353535;
+	color: #fff;
 }
+
 h2 {
 	font-size:1.5em;
 	margin:0.83em 0;
@@ -303,6 +305,7 @@ table {
 	-webkit-box-shadow: 0px 3px 0px 0px #00ff71;
 	-moz-box-shadow: 0px 3px 0px 0px #00ff71;
 	box-shadow: 0px 3px 0px 0px #00ff71;
+	cursor: pointer;
 }
 .box-hover {
 	transition:all 500ms ease-in-out;
@@ -330,7 +333,7 @@ table {
 	outline:none!important;
 }
 .menu-wrap a:hover,.menu-wrap a:focus {
-	color: #E04343;
+	color: #4387e0;
 }
 .content-wrap {
 	overflow-y:scroll;
@@ -362,7 +365,8 @@ table {
 	border:none;
 	text-indent:2.5em;
 	color:transparent;
-	background:transparent;
+	background-color: rgba(255, 255, 255, 0.5);
+	
 }
 .menu-button::before {
 	position:absolute;
@@ -370,7 +374,7 @@ table {
 	right:0.5em;
 	bottom:0.5em;
 	left:0.5em;
-	background: linear-gradient(#00c8ff 20%,rgba(0, 0, 0, 0) 20%,rgba(0, 0, 0, 0) 40%,#00c8ff 40%, #00c8ff 60%,rgba(0, 0, 0, 0) 60%,rgba(0, 0, 0, 0) 80%,#00c8ff 80%);
+	background: linear-gradient(#333 20%,rgba(0, 0, 0, 0) 20%,rgba(0, 0, 0, 0) 40%,#333 40%, #333 60%,rgba(0, 0, 0, 0) 60%,rgba(0, 0, 0, 0) 80%,#333 80%);
 	content:'';
 }
 .menu-button:hover {
@@ -389,6 +393,8 @@ table {
 	height:100%;
 	overflow:hidden;
 	font-size:0.75em;
+	background-color: rgba(0, 0, 0, 0.6);
+	
 }
 .icon-list {
 	float:right;
@@ -425,10 +431,11 @@ table {
 	transform:translate3d(0,0,0);
 	-webkit-transition-delay:0s;
 	transition-delay:0s;
-	border-bottom: 1px solid #00ff71;
+	box-shadow: 3px 3px 30px 8px rgba(107, 107, 107, 0.625);
+	background-color: rgba(255, 255, 255, 0.6);
 }
 .show-menu .icon-list a {
-	opacity:1;
+	opacity: 1;
 	-webkit-transition:opacity 0.4s 0.4s;
 	transition:opacity 0.4s 0.4s;
 }
@@ -454,11 +461,13 @@ table {
 }
 /* ==========================================================================Hero========================================================================== */
 .hero {
-	/* background: url('../img/header-bg.jpg') right bottom no-repeat; */
-	background-size: contain;
+	background: url('../img/header-bg.jpg') no-repeat center center fixed;
+	background-size: cover;
 	padding:110px 0 100px 0;
 	height:auto;
-	background-color: #FBFBFB;
+
+	 
+	
 }
 .hero h1 {
 	font-size: 120px;
@@ -469,7 +478,7 @@ table {
 	text-transform: uppercase;
 }
 .hero h1 span {
-	color:#a1a9b0;
+	color:#ffffff;
 	/* display:inline-block; */
 }
 .hero h3 {
@@ -477,7 +486,7 @@ table {
 	margin:0;
 	padding:0;
 	opacity:0.5;
-	color: #353535;
+	color: #fffefe;
 	letter-spacing: 18px;
 	line-height: 50px;
 	text-transform: uppercase;
@@ -604,8 +613,8 @@ h1.arrow span {
 }
 .about-text {
 	padding:20px 50px 25px 50px;
-	background: rgb(0,200,255);
-	background: linear-gradient(90deg, rgba(0,200,255,1) 0%, rgba(0,255,113,1) 100%);;
+	/* background: rgb(0,200,255); */
+	/* background: linear-gradient(90deg, rgba(0,200,255,1) 0%, rgba(0,255,113,1) 100%); */
 }
 .about-text h1 {
 	text-transform:uppercase;
@@ -613,7 +622,7 @@ h1.arrow span {
 	color: #8C8C8C;
 }
 .color-bg h1.arrow span {
-    color: #00c8ff;
+    color: #007bff;
 }
 .color-bg h1.arrow {
     color: #FFF;
@@ -945,7 +954,7 @@ ul.social-buttons li:last-child {
 .up-btn {
 	width:55px;
 	height:55px;
-	background: rgba(0, 255, 113, 0.8);
+	background: rgba(0, 200, 255, 0.8);
 	display:block;
 	margin:0 auto;
 	color: black;
@@ -961,7 +970,7 @@ ul.social-buttons li:last-child {
 }
 .up-btn:hover,up-btn:focus {
 	color: black;
-	background: #00ff71;
+	background: #00c8ff;
 }
 .contact-details {
 	margin:70px 0;
@@ -1249,3 +1258,36 @@ ul.slides li {
 .color-adjust2 {
 	color: #fff;
 }
+.largerText {
+	font-size: 1.7em;
+	font-weight: 500;
+}
+/* Flashlight Overlay */
+:root {
+	cursor: none;
+	--cursorX: 80vw;
+	--cursorY: 80vh;
+  }
+  :root:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	pointer-events: none;
+	background: radial-gradient(
+	  circle 12vmax at var(--cursorX) var(--cursorY),
+	  rgba(0,0,0,0) 0%,
+	  rgba(0,0,0,.5) 80%,
+	  rgba(0,0,0,.95) 100%
+	)
+  }
+
+  .disappear {
+	transition: 0.4s;
+	color: rgba(255, 255, 255, 0)!important;
+  }
+  .disappear:hover{
+	transition: .5s;
+	color: rgba(255, 255, 255, 100)!important;
+  }
