@@ -38,14 +38,14 @@ a:hover,a:focus,a:active {
 	outline:none!important;
 }
 p {
-	color:#8c9398;
+	color:#ffffff;
 	word-spacing:1px;
 	line-height:25px;
 	font-size:14px;
 }
 h2 {
 	font-size:15px;
-	color:#353535;
+	color:#007bff;
 	text-transform:uppercase;
 	font-weight:bold;
 }
@@ -359,7 +359,7 @@ table {
 }
 /* Menu Button */
 .menu-button {
-	z-index:1000;
+	z-index: 1000;
 	margin:0;
 	padding:0;
 	border:none;
@@ -460,15 +460,7 @@ table {
 	transition-delay: 0.5s;
 }
 /* ==========================================================================Hero========================================================================== */
-.hero {
-	background: url('../img/header-bg.jpg') no-repeat center center fixed;
-	background-size: cover;
-	padding:110px 0 100px 0;
-	height:auto;
 
-	 
-	
-}
 .hero h1 {
 	font-size: 120px;
 	letter-spacing: -8px;
@@ -571,7 +563,7 @@ table {
 h1.arrow {
 	font-size: 16px;
 	text-transform:uppercase;
-	color:#353535;
+	color:#ffffff;
 	letter-spacing: 4px;
 	background:url('../img/h1-bg.png') no-repeat center bottom;
 	padding-bottom:30px;
@@ -765,7 +757,7 @@ img.grayscale:hover {
 .effects .img {
 	position:relative;
 	position:relative;
-	z-index:1;
+	z-index:2;
 	overflow:hidden;
 }
 .effects .img:nth-child(n) {
@@ -898,6 +890,7 @@ img.grayscale:hover {
 	text-transform:uppercase;
 	font-weight:bold;
 	letter-spacing:1px;
+	margin-bottom: 60px;
 }
 .outline-btn:hover,.outline-btn:focus {
 	
@@ -1273,21 +1266,38 @@ ul.slides li {
 	display: block;
 	width: 100%;
 	height: 100%;
-	position: fixed;
+	position: fixed ;
 	pointer-events: none;
 	background: radial-gradient(
-	  circle 12vmax at var(--cursorX) var(--cursorY),
+	  circle 20vmax at var(--cursorX) var(--cursorY),
 	  rgba(0,0,0,0) 0%,
-	  rgba(0,0,0,.5) 80%,
-	  rgba(0,0,0,.95) 100%
+	  rgba(0, 0, 0, 0.3) 80%,
+	  rgba(0, 0, 0, 0.95) 100%
 	)
   }
 
-  .disappear {
+  .show {
 	transition: 0.4s;
-	color: rgba(255, 255, 255, 0)!important;
+	opacity: 0 !important;
   }
-  .disappear:hover{
-	transition: .5s;
-	color: rgba(255, 255, 255, 100)!important;
+
+  .show:hover {
+	transition: 1s;
+	opacity: 0.8 !important;
+	
   }
+
+  .pushBack {
+	position: relative;
+	z-index: -1 !important;
+  }
+  .pushBack2 {
+	position: relative;
+	z-index: 0 !important;
+  }
+  .pushBack {
+	position: relative;
+	z-index: -1 !important;
+  }
+
+  
