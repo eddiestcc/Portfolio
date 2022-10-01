@@ -1256,7 +1256,10 @@ ul.slides li {
 	font-weight: 500;
 }
 /* Flashlight Overlay */
-:root {
+
+
+
+:root:hover {
 	cursor: none;
 	--cursorX: 80vw;
 	--cursorY: 80vh;
