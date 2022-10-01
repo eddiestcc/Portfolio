@@ -76,4 +76,3 @@ function update(e){
   
   document.addEventListener('mousemove',update)
   document.addEventListener('touchmove',update)
-
